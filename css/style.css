@@ -1,0 +1,19 @@
+/*-- Global Styles --*/
+:root {
+}
+/*-- Document Styles --*/
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1em;
+}
+.card{
+  border: 1px solid black;
+  padding: 1em;
+}
+.thumb{
+  background-color: blue;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 56%;
+}
