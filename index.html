@@ -11,23 +11,53 @@
   </head>
   <body>
     <nav id="main-nav" class="topnav">
-    <a class="nav-item logo">
+    <a class="nav-item">
       <span class="label"><i class="fas fa-home"></i>Home</span>
     </a>
     <a class="nav-item">
-      <span class="label"><i class="fas fa-file-upload"></i>Information</span>
+      <span class="label"><i class="fas fa-question-circle"></i>Information</span>
     </a>
     <a class="nav-item">
-      <span class="label"><i class="fas fa-question-circle"></i>Daily Horoscope</span>
+      <span class="label"><i class="fas fa-star-half-alt"></i>Daily Horoscope</span>
     </a>
     <a class="nav-item">
-      <span class="label"><i class="fab fa-gratipay"></i>Horoscope Matching</span>
+      <span class="label"><i class="fas fa-people-carry"></i>Horoscope Matching</span>
     </a>
-    <a class="nav-item more">
+    <a class="nav-item">
       <span class="label"><i class="fas fa-ellipsis-h"></i>More</span>
     </a>
     <a href="javascript:void(0);" class="nav-item trigram" onclick="navToggle()">&#9776;</a>
   </nav>
+
+  <section class="slideshow">
+      <div class="slideshow-wrapper">
+        <div class="slide fade">
+
+          <img src="https://picsum.photos/1280/448/?image=667"/>
+          <div class="captiontext">.Every cloud has a silver lining.</div>
+        </div><!-- end .slide.fade -->
+        <div class="slide fade">
+
+          <img src="https://picsum.photos/1280/448/?image=702"/>
+          <div class="captiontext">Enough is as good as a feast.</div>
+        </div><!-- end .slide.fade -->
+        <div class="slide fade">
+
+          <img src="https://picsum.photos/1280/448/?image=547"/>
+          <div class="captiontext"> After a storm comes a calm.</div>
+        </div><!-- end .slide.fade -->
+        <div class="slide fade">
+
+          <img src="https://picsum.photos/1280/448/?image=362"/>
+          <div class="captiontext">Accept your failure and move on.</div>
+        </div><!-- end .slide.fade -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;<!--unicode for less-than-sign--></a>
+        <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
+      </div><!--end slideshow-wrapper-->
+      <br>
+
+    </section>
+
 
     <main class="gallery">
       <div class="card">
