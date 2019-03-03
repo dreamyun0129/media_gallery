@@ -15,7 +15,7 @@ body { /*-- Sets body defaults --*/
   background-color: var(--prime);
 }
 i.fas { /*-- adds a little padding left and right on fontawesome icons --*/
-  padding: 0 .33em;
+  padding: 0.3em;
 }
 /*------------------
 --  Nav Styles  --
