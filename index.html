@@ -32,95 +32,167 @@
   <section class="slideshow">
       <div class="slideshow-wrapper">
         <div class="slide fade">
-
+          <div class="numberof">1 of 4</div>
           <img src="https://picsum.photos/1280/448/?image=667"/>
-          <div class="captiontext">.Every cloud has a silver lining.</div>
-        </div><!-- end .slide.fade -->
+          <div class="captiontext">Every cloud has a silver lining.</div>
+        </div>
         <div class="slide fade">
-
+          <div class="numberof">2 of 4</div>
           <img src="https://picsum.photos/1280/448/?image=702"/>
           <div class="captiontext">Enough is as good as a feast.</div>
-        </div><!-- end .slide.fade -->
+        </div>
         <div class="slide fade">
-
+          <div class="numberof">3 of 4</div>
           <img src="https://picsum.photos/1280/448/?image=547"/>
-          <div class="captiontext"> After a storm comes a calm.</div>
-        </div><!-- end .slide.fade -->
+          <div class="captiontext">After a storm comes a calm.</div>
+        </div>
         <div class="slide fade">
-
+          <div class="numberof">4 of 4</div>
           <img src="https://picsum.photos/1280/448/?image=362"/>
           <div class="captiontext">Accept your failure and move on.</div>
-        </div><!-- end .slide.fade -->
+        </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;<!--unicode for less-than-sign--></a>
         <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
-      </div><!--end slideshow-wrapper-->
+      </div>
       <br>
-
+      <div class="text-center">
+      <span class="indicator" onclick="currentSlide(1)"><img src="https://picsum.photos/1280/448/?image=667"/></span>
+      <span class="indicator" onclick="currentSlide(2)"><img src="https://picsum.photos/1280/448/?image=702"/></span>
+      <span class="indicator" onclick="currentSlide(3)"><img src="https://picsum.photos/1280/448/?image=547"/></span>
+      <span class="indicator" onclick="currentSlide(4)"><img src="https://picsum.photos/1280/448/?image=362"/></span>
+    </div>
     </section>
 
 
     <main class="gallery">
-      <div class="card">
-        <div clas="thumb">
-          <img src="pic/aquarius.png" style="width:100%">
-        </div>
+      <div class="card one">
+        <div class="thumb"></div>
         <div class="card-content">
           <h4>Aquarius(January 20 - February 18)</h4>
           <p>Strength: original, tolerant, ideal, friendly, charitable, independent, smart, practical</br>
             Weakness: changeful, disobedient, liberalistic, hasty, rebel</p>
+          <button data-modal="#01" class="card-more button">View</button>
       </div>
     </div>
-    <div class="card">
-      <div clas="thumb">
-        <img src="pic/pisces.png" style="width:100%">
-      </div>
+    <div id="01" class="modal">
+  		  <div class="modal-content">
+  		    <span class="close">&times;</span>
+  				<div class="modal-body">
+            <img src="pic/aquarius.png" alt="example" />
+  					<div class="eg-text">
+  						<h3>Water + Devices = Fun</h3>
+  						<p>I always keep a glass of water next to my expensive electronics, just in case I need to ruin them quickly . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  					</div>
+  				</div><!--end .modal-body-->
+  		  </div><!--end .modal-content-->
+  		</div><!--end .modal-->
+    <div class="card two">
+      <div class="thumb"></div>
       <div class="card-content">
         <h4>Pisces(February 19 - March 20)</h4>
         <p>Strength: conscious, aesthetic, platonic, dedicated, kind, with good temper</br>
           Weakness: recessive, sentimental, indecisive, unrealistic</p>
+        <button data-modal="#02" class="card-more button">View</button>
     </div>
   </div>
-  <div class="card">
-    <div clas="thumb">
-      <img src="pic/aries.png" style="width:100%">
-    </div>
+  <div id="02" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img src="pic/pisces.png" alt="example" />
+          <div class="eg-text">
+            <h3>Water + Devices = Fun</h3>
+            <p>I always keep a glass of water next to my expensive electronics, just in case I need to ruin them quickly . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div><!--end .modal-body-->
+      </div><!--end .modal-content-->
+    </div><!--end .modal-->
+  <div class="card three">
+    <div class="thumb"></div>
     <div class="card-content">
       <h4>Aries(March 21 -April 19)</h4>
       <p>Strength: hopeful, active, energetic, honest, adventurous, cheerful, argumentative, curious</br>
         Weakness: impulsive, naive, self-willed, belligerent, impatient</p>
+      <button data-modal="#03" class="card-more button">View</button>
   </div>
 </div>
-<div class="card">
-  <div clas="thumb">
-    <img src="pic/pisces.png" style="width:100%">
+<div id="03" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-body">
+        <img src="pic/aries.png" alt="example" />
+        <div class="eg-text">
+          <h3>Water + Devices = Fun</h3>
+          <p>I always keep a glass of water next to my expensive electronics, just in case I need to ruin them quickly . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div><!--end .modal-body-->
+    </div><!--end .modal-content-->
   </div>
+<div class="card four">
+  <div class="thumb"></div>
   <div class="card-content">
     <h4>Taurus(April 20 - May 20)</h4>
     <p>Strength: romantic, decisive, logical, diligent, ardent, patient, perseverant, benevolent</br>
       Weakness: prejudiced, dependent, stubborn</p>
+    <button data-modal="#04" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
-  <div clas="thumb">
-    <img src="pic/gemini.png" style="width:100%">
+<div id="04" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-body">
+        <img src="pic/taurus.png" alt="example" />
+        <div class="eg-text">
+          <h3>Water + Devices = Fun</h3>
+          <p>I always keep a glass of water next to my expensive electronics, just in case I need to ruin them quickly . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div><!--end .modal-body-->
+    </div><!--end .modal-content-->
   </div>
+<div class="card five">
+  <div class="thumb"></div>
   <div class="card-content">
     <h4>Gemini(May 21 - June 21)</h4>
     <p>Strength: multifarious, perspicacious, smart, cheerful, quick-witted, clement, charming</br>
       Weakness: fickle, gossipy, amphibian</p>
+    <button data-modal="#05" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
-  <div clas="thumb">
-    <img src="pic/cancer.png" style="width:100%">
+<div id="05" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-body">
+        <img src="pic/gemini.png" alt="example" />
+        <div class="eg-text">
+          <h3>Water + Devices = Fun</h3>
+          <p>I always keep a glass of water next to my expensive electronics, just in case I need to ruin them quickly . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div><!--end .modal-body-->
+    </div><!--end .modal-content-->
   </div>
+<div class="card six">
+  <div class="thumb"></div>
   <div class="card-content">
     <h4>Cancer(June 22 - July 22)</h4>
     <p>Strength: with strong sixth sense, subjective, careful, dedicated, perseverant, kind, caring</br>
       Weakness: greedy, possessive, sensitive, prim</p>
+    <button data-modal="#06" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
+<div id="06" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-body">
+        <img src="pic/cancer.png" alt="example" />
+        <div class="eg-text">
+          <h3>Water + Devices = Fun</h3>
+          <p>I always keep a glass of water next to my expensive electronics, just in case I need to ruin them quickly . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div><!--end .modal-body-->
+    </div><!--end .modal-content-->
+  </div>
+</div>
+<div class="card seven">
   <div clas="thumb">
     <img src="pic/leo.png" style="width:100%">
   </div>
@@ -128,9 +200,10 @@
     <h4>Leo(July 23 - August 22)</h4>
     <p>Strength: proud, charitable, reflective, loyal and enthusiastic</br>
       Weakness: arrogant, vainglorious, indulgent, wasteful, willful, and self-complacent</p>
+    <button data-modal="#07" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
+<div class="card eight">
   <div clas="thumb">
     <img src="pic/virgo.png" style="width:100%">
   </div>
@@ -138,9 +211,10 @@
     <h4>Virgo(August 23 - September 22)</h4>
     <p>Strength: helping, elegant, perfectionist, modest, practical, clearheaded</br>
       Weakness: picky, nosey, tortuous, confining</p>
+    <button data-modal="#08" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
+<div class="card nine">
   <div clas="thumb">
     <img src="pic/libra.png" style="width:100%">
   </div>
@@ -148,9 +222,10 @@
     <h4>Libra(September 23 - October 23)</h4>
     <p>Strength: idealistic, equitable, just, strong social skills, aesthetic, charming, kind-hearted</br>
       Weakness: hesitant, narcissistic, lazy, perfunctory, freewheeling</p>
+    <button data-modal="#09" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
+<div class="card ten">
   <div clas="thumb">
     <img src="pic/scorpio.png" style="width:100%">
   </div>
@@ -158,19 +233,21 @@
     <h4>Scorpio(October 24 - November 22)</h4>
     <p>Strength: mysterious, rational, intelligent, independent, intuitive, dedicated, sensible</br>
       Weakness: suspicious, fanatical, complicated, possessive, arrogant, self-willed, extreme</p>
+    <button data-modal="#10" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
+<div class="card eleven">
   <div clas="thumb">
     <img src="pic/sagittarius.png" style="width:100%">
   </div>
   <div class="card-content">
     <h4>Sagittarius(November 23 - December 21)</h4>
     <p>Strength: insightful, superior, rational, brave, beautiful, lively, lovely, optimistic</br>
-Weakness: forgetful, careless, rash</p>
+      Weakness: forgetful, careless, rash</p>
+    <button data-modal="#11" class="card-more button">View</button>
 </div>
 </div>
-<div class="card">
+<div class="card tewlve">
   <div clas="thumb">
     <img src="pic/capricorn.png" style="width:100%">
   </div>
@@ -178,10 +255,14 @@ Weakness: forgetful, careless, rash</p>
     <h4>Capricorn(December 22 - January 19)</h4>
     <p>Strength: excellent, intelligent, practical, reliable, perseverant, generous, persistent</br>
       Weakness: stubborn, lonely, and suspicious</p>
+    <button data-modal="#12" class="card-more button">View</button>
 </div>
 </div>
     </main>
   <!-- closing script calls -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
   <script src="js/page.js"></script>
   </body>
 </html>
