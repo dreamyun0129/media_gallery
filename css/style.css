@@ -1,10 +1,10 @@
 /*-- Global Styles --*/
 :root {
-  --prime: #222;
-  --text: #FFF;
+  --prime: #090f0b;
+  --text: #0D1810;
   --rev-text: #EEE;
   --accent: #2E9CCA;
-  --bg: #EEE;
+  --bg: #fbf9d8;
 }
 /*-- Document Styles --*/
 
@@ -172,6 +172,8 @@ a.nav-item:hover {
 
 
 .gallery{
+  margin-top: 3.5rem; /*-- adds space above grid wrap --*/
+  padding: .5rem; /*-- adds padding inside grid wrap --*/
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-gap: 1em;
@@ -199,6 +201,7 @@ a.nav-item:hover {
   border-radius: 6px;
   border: 1px solid black;
   padding: 1em;
+  background-color:var(--bg)
 }
 .thumb{
   background-size: cover;
@@ -207,15 +210,35 @@ a.nav-item:hover {
   border-radius: 4px 4px 0 0;
 }
 
+.card-content {
+  padding: 0 .5em .7em .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*-- vertically centers card content --*/
+}
+.card-title {
+  margin: 1rem 0 0 0;
+  /*text-transform: uppercase; /*--all caps text --*/
+  align-self: flex-start; /*-- positions at beginning --*/
+  color: var(--text);
+  font-size: 18px;
+}
+
 .one .thumb {background-image:url("../pic/gemini.png");}
 .two .thumb {background-image:url("../pic/pisces.png");}
 .three .thumb {background-image:url("../pic/aries.png");}
 .four .thumb {background-image:url("../pic/taurus.png");}
 .five .thumb {background-image:url("../pic/gemini.png");}
 .six .thumb {background-image:url("../pic/cancer.png");}
+.seven .thumb {background-image: url("../pic/leo.png");}
+.eight .thumb {background-image: url("../pic/virgo.png");}
+.nine .thumb {background-image: url("../pic/libra.png");}
+.ten .thumb {background-image: url("../pic/scorpio.png");}
+.eleven .thumb {background-image: url("../pic/sagittarius.png");}
+.twelve .thumb {background-image: url("../pic/capricorn.png");}
 
 button.card-more {
-  /*background: transparent;*/
+  background: transparent;
   padding: .45em .7em .4em .7em;
   border-radius: 200px;
   font-size: .7em;
@@ -224,8 +247,8 @@ button.card-more {
   text-transform: uppercase;
 }
 button.card-more, button.card-more:visited {
-  color: var(--prime);
-  border: 1.5px solid var(--prime);
+  color: var(--text);
+  border: 1.5px solid var(--text);
   transition: all 250ms ease-in-out;
 }
 button.card-more:hover, button.card-more:active {
@@ -281,6 +304,7 @@ button.card-more:hover, button.card-more:active {
 }
 .eg-text {
   align-self: center;
+  color:var(--text);
 }
 .eg-text h3 {
   margin-top: 0;
@@ -292,6 +316,18 @@ button.card-more:hover, button.card-more:active {
   height: auto;
 }
 @media screen and (min-width: 1280px) { /*-- better modal display on largest screens --*/
-  .modal-body {grid-template-columns: 7fr 5fr;}
+  .modal-body {grid-template-columns: 3fr 7fr;}
+}
 
+footer {
+  background-color: var(--prime);
+  padding: .25rem;
+  color: var(--rev-text);
+  text-align: center;
+}
+footer a {
+  color: var(--rev-text);
+}
+footer a:hover {
+  color: var(--rev-accent);
 }
