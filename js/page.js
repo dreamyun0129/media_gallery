@@ -22,6 +22,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//slide rotation function
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("slide");
@@ -45,7 +46,7 @@ $(".button").on("click", function() {
 });
 $(".modal").on("click", function(e) {
   var className = e.target.className;
-  if(className === "modal" || className === "close"){ .
+  if(className === "modal" || className === "close"){
     $(this).closest(".modal").hide();
   }
 });
